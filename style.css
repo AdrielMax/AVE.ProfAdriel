@@ -1,0 +1,151 @@
+.share-tech-regular {
+  font-family: "Share Tech", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.notable-regular {
+  font-family: "Notable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    width: 480px;
+    margin: 0 auto;
+    background-color: #393939;
+    font-family: Share Tech;
+    background-image: url('fundo.jpg');
+    background-repeat: repeat; /* Faz a imagem se repetir tanto na horizontal quanto na vertical */
+    box-shadow: 0 0 50px 10px rgb(70, 70, 70); /*[deslocamento-X] [deslocamento-Y] [desfoque] [espalhamento] [cor] [inset]*/
+}
+
+
+#inicio{
+    padding-top: 25px;
+    color: #808080;
+    background-color: #000000;
+    display: inline-flex;
+}
+#inicio h1{
+    font-size: 80px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+    margin-top: 25px;
+    font-family: Notable;
+}
+
+#inicio p{
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+.perfil{
+    width: 240px;
+    border-radius: 45px 5px 45px 5px ;
+    margin: auto;
+    padding-right: 5px;
+}
+
+.instrucoes{
+    background-color: #000000;
+    margin-top: 0;
+}
+.instrucoes h2{
+    text-align: center;
+    font-family: notable;
+    margin-top: 0;
+    margin-bottom: 0;
+    color:#cbcbcb;
+    padding-bottom: 10px;
+}
+.instrucoes p{
+    color:#cbcbcb;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.video1{
+    margin-left: 20px;
+}
+.aula{
+    background-color: #000000;
+    margin-top: 0;
+    color: #cbcbcb;
+}
+
+.aula p{
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.aula a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: Notable;
+}
+
+
+.button {
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+  padding: 14px 25px;
+  border-radius: 10px;
+  font-size: 1.25em;
+  cursor: pointer;
+  margin-left: 90px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.button span {
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  background: #272727;
+  border-radius: 9px;
+  transition: 0.5s;
+}
+
+.button:hover::before {
+  opacity: 0.7;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  background: linear-gradient(45deg, #0ce39a, #69007f, #fc0987);
+  border-radius: 9px;
+  transition: 0.5s;
+  opacity: 0;
+  filter: blur(20px);
+}
+
+.button:hover:after {
+  opacity: 1;
+}
+
+#rodape{
+    background-color: #000000;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 0;
+    color: #808080;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#rodape img{
+    width: 50px;
+}
